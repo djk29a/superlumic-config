@@ -12,11 +12,11 @@
     - irssi
     - maven
     - yuicompressor
-    - google-cloud-sdk
 
 - name: install developer cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
 #    - phpstorm
 #    - sequel-pro
+    - google-cloud-sdk
     - java
