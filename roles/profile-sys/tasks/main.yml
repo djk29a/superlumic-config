@@ -3,18 +3,22 @@
 - name: tap caskroom/versions
   homebrew_tap: tap=caskroom/versions state=present
 
-- name: install developer brew applications
+- name: install sysadmin brew applications
   homebrew: name={{item}} state=latest
   with_items:
-    - jq
-    - go
-    - hugo
-    - irssi
-    - maven
-    - yuicompressor
-    - google-cloud-sdk
+    - mtr
+    - rsync
+    - watch
+    - htop
+    - tree
+    - wget
+    - iperf
+    - ssh-copy-id
+    - netcat
+    - ipmitool
+    - awscli
 
-- name: install developer cask applications
+- name: install sysadmin cask applications
   homebrew_cask: name={{item}} state=present
   with_items:
 #    - phpstorm

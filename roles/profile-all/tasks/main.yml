@@ -4,7 +4,14 @@
   homebrew_cask: name={{item}} state=present
   with_items:
     - slack
-    - google-drive
     - vlc
-    - keepingyouawake
-
+#    - google-drive
+#    - keepingyouawake
+- name: install brew applications for all users
+  homebrew: name={{item}} state=latest
+  with_items:
+    - dos2unix
+    - ffmpeg
+    - mpv
+    - vim
+    - graphviz
