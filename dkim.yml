@@ -50,6 +50,7 @@
 #        create=true
 #      with_items:
 #        - { regexp: '^djk29a', line: 'djk29a ALL=(ALL) NOPASSWD: ALL' }
+    - name: 
 
   roles:
     - profile-all
@@ -133,6 +134,10 @@
         key: 'FXPreferredViewStyle'
         type: string
         value: "clmv"
+      - domain: 'com.apple.finder'
+        key: 'AppleShowAllFiles'
+        type: boolean
+        value: true
       - domain: 'NSGlobalDomain'
         key: 'NSNavPanelExpandedStateForSaveMode'
         type: boolean
