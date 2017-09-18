@@ -49,8 +49,7 @@
 #        state=present
 #        create=true
 #      with_items:
-#        - { regexp: '^djk29a', line: 'djk29a ALL=(ALL) NOPASSWD: ALL' }
-    - name: 
+#        - { regexp: '^dk', line: 'dk ALL=(ALL) NOPASSWD: ALL' }
 
   roles:
     - profile-all
