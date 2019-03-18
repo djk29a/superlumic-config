@@ -7,19 +7,19 @@
     - name: install personal cask applications
       homebrew_cask: name={{item}} state=present
       with_items:
+        - iterm2
+        - keka
 #        - spotify
 #        - istat-menus
-        - keka
-        - dropbox
+#        - dropbox
 #        - kaleidoscope
 #        - hazel
 #        - sonos
 #        - tower
 #        - superduper
-        - google-chrome
+#        - google-chrome
 #        - keepingyouawake
 #        - microsoft-office
-        - iterm2
     - name: create ssh directory
       become: yes
       file:
@@ -50,7 +50,6 @@
 #        create=true
 #      with_items:
 #        - { regexp: '^djk29a', line: 'djk29a ALL=(ALL) NOPASSWD: ALL' }
-    - name: 
 
   roles:
     - profile-all
@@ -58,9 +57,9 @@
     - profile-developer
 
   vars:
-    - computername: kether
+    - computername: dkeg
     - git_user_name: dkim 
-    - git_user_email: d@djk29a.com
+    - git_user_email: dkim@endgame.com
 #    - php_version: 70
 #    - sublime_packages:
 #        - dest: "SideBarEnhancements"

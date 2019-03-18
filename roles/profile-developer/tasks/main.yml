@@ -10,7 +10,7 @@
     - go
     - hugo
     - irssi
-    - maven
+#    - maven
     - yuicompressor
 
 - name: install developer cask applications
@@ -19,5 +19,6 @@
 #    - phpstorm
 #    - sequel-pro
     - google-cloud-sdk
-    - java
+#    - java
     - emacs
+    - visual-studio-code

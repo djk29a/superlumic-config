@@ -18,9 +18,9 @@
     - ipmitool
     - awscli
 
-- name: install sysadmin cask applications
-  homebrew_cask: name={{item}} state=present
-  with_items:
+#- name: install sysadmin cask applications
+#  homebrew_cask: name={{item}} state=present
+#  with_items:
 #    - phpstorm
 #    - sequel-pro
-    - java
+#    - java
